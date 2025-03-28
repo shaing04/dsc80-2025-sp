@@ -19,12 +19,12 @@ nav_order: 2
 
 <!-- prettier-ignore-end -->
 
-[ed]: https://edstem.org/us/join/tq4PYn
-[gradescope]: https://www.gradescope.com/courses/937053
-[github]: https://github.com/dsc-courses/dsc80-2025-wi
-[welcome-survey]: https://forms.gle/9sEF68d9gWSCsqhUA
-[exam-accommodations]: https://forms.gle/x4gW3PLwZucdnpXY6
-[extension-request-form]: https://forms.gle/VS7RC1spg2a3jQtm7
+[piazza]: https://piazza.com/class/m8qkpqxd1s316c
+[gradescope]: https://www.gradescope.com/courses/1011519
+[github]: https://github.com/dsc-courses/dsc80-2025-sp
+[welcome-survey]: https://docs.google.com/forms/d/e/1FAIpQLScNAvrwJpb850IjIul91ddi2bUKLyrRQkAS8N6t5mbXy0Vi0A/viewform?usp=dialog
+<!-- [exam-accommodations]: https://forms.gle/NyYbVr1s3BY95Zw1A -->
+[extension-request-form]: https://docs.google.com/forms/d/e/1FAIpQLSe1jsdmOFvTi0SkEGVFk8DA4yG3GddgqMuCdBL_cwgJ1Xrdqg/viewform?usp=dialog
 
 ## About 🧐
 
@@ -52,10 +52,10 @@ course content. There are also a few things you'll need to do to get set up.
 
 You'll need to make accounts on the following sites:
 
-- **Ed:** We’ll be using Ed as our course message and discussion board. More
+- **Piazza:** We’ll be using Piazza as our course message and discussion board. More
   details are in the [Communication](#communication-) section below. If you
-  didn’t already get an invitation to our Ed course, [sign up
-  here][ed].
+  didn’t already get an invitation to our Piazza course, [sign up
+  here][piazza].
 
 - **Gradescope:** You’ll submit all assignments and exams to
   [Gradescope][gradescope]. This is where all of
@@ -63,7 +63,7 @@ You'll need to make accounts on the following sites:
   assignments. Parts of these assignments will be manually graded, but most of
   them will be autograded. You should have received an email invitation for
   Gradescope, but if not please let us know as soon as possible (preferably via
-  Ed).
+  Piazza).
 
 - **GitHub:** Like in DSC 30, you'll _access_ all course content (lecture slides
   and assignments) by _pulling_ our course GitHub repository. [The link to the
@@ -88,23 +88,23 @@ yourself and tell us if you need an alternate exam.
 
 ## Communication 💬
 
-This quarter, we’ll be using Ed as our course message board. You will be added
-to Ed automatically; use the invite link in the section above if you weren't
+This quarter, we’ll be using Piazza as our course message board. You will be added
+to Piazza automatically; use the invite link in the section above if you weren't
 added.
 
 If you have a question about anything to do with the course — if you’re stuck
 on a problem, didn’t understand something from lecture, want clarification on
 course logistics, or just have a general question about data science — you can
-make a post on Ed. We only ask that if your question includes some or all of an
+make a post on Piazza. We only ask that if your question includes some or all of an
 answer (even if you’re not sure it’s right), please make your post private so
 that others cannot see it. You can also post anonymously to other students if
 you prefer.
 
-Course staff will regularly check Ed and try to answer any questions that you
+Course staff will regularly check Piazza and try to answer any questions that you
 have. You’re also encouraged to answer questions asked by other students.
 Explaining something is a great way to solidify your understanding of it!
 
-**Please don’t email individual staff members, just make a private or public Ed
+**Please don’t email individual staff members, just make a private or public Piazza
 post instead.**
 
 ---
@@ -113,8 +113,7 @@ post instead.**
 
 ### Lectures
 
-Lectures will be held in-person on Tuesdays and Thursdays from 11:00-12:20PM in <a
-href="https://map.concept3d.com/?id=1005#!ct/18312?s/SOLIS_Main">SOLIS</a> 104.
+Lectures will be held in-person on Tuesdays and Thursdays from 9:30-10:50AM in <a href="https://map.concept3d.com/?id=1005#!ct/18312?s/CENTR_Main">CENTR</a> 113.
 Lectures will be podcasted.
 
 **New**{: .label .label-green } In the Welcome Survey at the start of the
@@ -252,9 +251,9 @@ schedule (which is subject to change in any given week):
 This class has one Midterm Exam and one Final Exam. Exams are cumulative,
 though the Final Exam will emphasize material after the Midterm Exam.
 
-- **Midterm Exam**: Tuesday Feb 11, 11am-12:20pm in SOLIS 104 (during lecture)
+- **Midterm Exam**: TBD (during lecture)
 
-- **Final Exam:** Thursday, March 20th, 11:30AM-2:30PM. Location is TBD
+- **Final Exam:** June 10, 2025. Location is TBD
 
 Both exams will be administered in-person. If you have conflicts with either of the exams, please let us know on the [Exam Accommodations Form](https://forms.gle/UiGJ2aDsGViVbYPB9).
 
@@ -401,7 +400,7 @@ We’re in this together 😎.
 
 DSC 80 is known for being a rigorous but rewarding course. While you will be
 challenged this quarter, we will be offering you plenty of support through
-office hours and Ed. Make good use of these resources, and you will be able to
+office hours and Piazza. Make good use of these resources, and you will be able to
 succeed in this course.
 
 There is no excuse for cheating in this course. If you do cheat, we will
@@ -443,7 +442,7 @@ The following activities are considered cheating and are not allowed in DSC 80
 - Using or submitting code acquired from other students (except from your pair
   programming partner during projects), the web, or any other resource not
   officially sanctioned by this course
-- Posting your code online, including on Ed, unless privately to instructors
+- Posting your code online, including on Piazza, unless privately to instructors
   only
 - Having any other person complete any part of your assignment on your behalf
 - Completing an assignment on behalf of someone else
@@ -466,7 +465,7 @@ allowed in DSC 80 (not an exhaustive list):
 - Google searching for documentation on Python or `pandas`
 - Working together with other students on assignments without copying or
   sharing answers
-- Posting a question about your approach to a problem on Ed, without sharing
+- Posting a question about your approach to a problem on Piazza, without sharing
   your code
 
 The best way to avoid problems is by using your best judgement and remembering

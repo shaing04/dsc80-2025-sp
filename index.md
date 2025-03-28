@@ -14,12 +14,12 @@ nav_order: 1
 {{ site.staffersnobio }}
 
 [syllabus]: syllabus
-[ed]: https://edstem.org/us/join/tq4PYn
-[gradescope]: https://www.gradescope.com/courses/941090
-[github]: https://github.com/dsc-courses/dsc80-2025-wi
-[welcome-survey]: https://forms.gle/uYGK8tFj8EygXmERA
-[exam-accommodations]: https://forms.gle/NyYbVr1s3BY95Zw1A
-[extension-request-form]: https://forms.gle/VS7RC1spg2a3jQtm7
+[piazza]: https://piazza.com/class/m8qkpqxd1s316c
+[gradescope]: https://www.gradescope.com/courses/1011519
+[github]: https://github.com/dsc-courses/dsc80-2025-sp
+[welcome-survey]: https://docs.google.com/forms/d/e/1FAIpQLScNAvrwJpb850IjIul91ddi2bUKLyrRQkAS8N6t5mbXy0Vi0A/viewform?usp=dialog
+<!-- [exam-accommodations]: https://forms.gle/NyYbVr1s3BY95Zw1A -->
+[extension-request-form]: https://docs.google.com/forms/d/e/1FAIpQLSe1jsdmOFvTi0SkEGVFk8DA4yG3GddgqMuCdBL_cwgJ1Xrdqg/viewform?usp=dialog
 
 <!-- [Jump to the current week](#week-9-modeling-in-practice){: .btn } [Lab Solutions](https://edstem.org/us/courses/51951/discussion/4183397){: .btn .btn-green } -->
 
