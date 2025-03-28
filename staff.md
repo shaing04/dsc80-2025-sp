@@ -10,21 +10,21 @@ nav_order: 6
 ## Instructor
 
 <div class="staffer">
-  <img class="staffer-image" src="/assets/staff-images/watson-parris.jpg" alt="Duncan Watson-Parris">
+  <img class="staffer-image" src="/assets/staff-images/tauhidur-rahman.jpg" alt="Tauhidur Rahman">
 
   <div>
     <h3 class="staffer-name">
-      <a href="https://www.samlau.me/">Duncan Watson-Parris</a>
+      <a href="https://www.tauhidurrahman.com/">Tauhidur Rahman</a>
     </h3>
 
     <!-- Contact Information -->
     <p>
-      <a href="mailto:dwatsonparris@ucsd.edu">dwatsonparris@ucsd.edu</a><br>
+      <a href="mailto:trahman@ucsd.edu">trahman@ucsd.edu</a><br>
     </p>
 
     <!-- Instructor Paragraph -->
     <p>
-    Duncan Watson-Parris is an Assistant Professor in the Halıcıoğlu Data Science Institute and Scripps Institution of Oceanography, working at the interface of climate research and machine learning. The <a href="https://climate-analytics-lab.github.io">Climate Analytics Lab</a> he leads focuses on understanding the interactions between aerosols and clouds, and their representation within global climate models. CAL is leading the development of a variety of machine learning tools and techniques to optimally combine the huge variety of available observational datasets, including global satellite and aircraft measurements, to constrain and improve these important models.
+    Tauhidur Rahman is an Assistant Professor in the Halıcıoğlu Data Science Institute at the University of California San Diego where he directs the <a href="https://mosaic-laboratory.github.io/">Mobile Sensing and Ubiquitous Computing Laboratory (MOSAIC Lab)</a>. His research focuses on developing innovative ubiquitous and mobile health sensing technologies that capture low-level physiological and environmental signals, translating them into meaningful biological and behavioral insights.
     </p>
   </div>
 </div>
