@@ -143,8 +143,8 @@ them to supplement your understanding!
 
 ### Discussions
 
-We will not be using the scheduled discussion times for this course. Instead, we
-will post Exam Prep worksheets with suggested questions from past exams.
+<!-- We will not be using the scheduled discussion times for this course. Instead, we
+will post Exam Prep worksheets with suggested questions from past exams. -->
 
 <!-- **New**{: .label .label-green } In past offerings of DSC 80, students often
 wished for more opportunities to practice the types of questions that will be
@@ -159,6 +159,9 @@ and final exam grade will each be worth 2.5% more. -->
 receive credit for discussion for a particular week if you attend the discussion
 in person and complete the worksheet. Attending at least 8 discussions during
 the 10-week quarter will earn full credit for discussion. -->
+In each discussion, the TA will prepare a worksheet of exam questions. You will
+receive credit for discussion for a particular week if you attend the discussion
+in person and complete the worksheet.
 
 ### Labs
 
