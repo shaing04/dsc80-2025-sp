@@ -22,9 +22,8 @@ nav_order: 2
 [piazza]: https://piazza.com/class/m8qkpqxd1s316c
 [gradescope]: https://www.gradescope.com/courses/1011519
 [github]: https://github.com/dsc-courses/dsc80-2025-sp
-[welcome-survey]: https://docs.google.com/forms/d/e/1FAIpQLScNAvrwJpb850IjIul91ddi2bUKLyrRQkAS8N6t5mbXy0Vi0A/viewform?usp=dialog
-<!-- [exam-accommodations]: https://forms.gle/NyYbVr1s3BY95Zw1A -->
-[extension-request-form]: https://docs.google.com/forms/d/e/1FAIpQLSe1jsdmOFvTi0SkEGVFk8DA4yG3GddgqMuCdBL_cwgJ1Xrdqg/viewform?usp=dialog
+[welcome-survey]: https://forms.gle/HW8AB9xtWzsWuuDf7
+[extension-request-form]: https://forms.gle/9KSR8cVXjxHuEs2z6
 
 ## About 🧐
 
