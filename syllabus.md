@@ -158,9 +158,7 @@ and final exam grade will each be worth 2.5% more. -->
 receive credit for discussion for a particular week if you attend the discussion
 in person and complete the worksheet. Attending at least 8 discussions during
 the 10-week quarter will earn full credit for discussion. -->
-In each discussion, the TA will prepare a worksheet of exam questions. You will
-receive credit for discussion for a particular week if you attend the discussion
-in person and complete the worksheet.
+In each discussion, the TA will prepare a worksheet of exam questions. You are encouraged to attend the discussion sections, but it is not required.
 
 ### Labs
 
