@@ -7312,6 +7312,7 @@ a.anchor-link {
                     processEnvironments: true
                 },
                 displayAlign: 'center',
+                messageStyle: 'none',
                 CommonHTML: {
                     linebreaks: {
                     automatic: true
@@ -7545,7 +7546,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Lecture-3-%E2%80%93-Aggregating">Lecture 3 – Aggregating<a class="anchor-link" href="#Lecture-3-%E2%80%93-Aggregating">¶</a></h1><h2 id="DSC-80,-Winter-2025">DSC 80, Winter 2025<a class="anchor-link" href="#DSC-80,-Winter-2025">¶</a></h2>
+<h1 id="Lecture-3-%E2%80%93-Aggregating">Lecture 3 – Aggregating<a class="anchor-link" href="#Lecture-3-%E2%80%93-Aggregating">¶</a></h1><h2 id="DSC-80,-Spring-2025">DSC 80, Spring 2025<a class="anchor-link" href="#DSC-80,-Spring-2025">¶</a></h2>
 </div>
 </div>
 </div>
@@ -7558,12 +7559,12 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Announcements-%F0%9F%93%A3">Announcements 📣<a class="anchor-link" href="#Announcements-%F0%9F%93%A3">¶</a></h3><ul>
 <li>Lab 1 is due <strong>tomorrow at 11:59pm.</strong><ul>
-<li>The <a href="https://forms.gle/9JdiAnu75D7T7MAu7"><strong>Welcome Survey</strong></a> is part of your Lab 1; we won't count your Lab 1 as submitted unless your Welcome Survey is also submitted.</li>
+<li>The <a href="https://docs.google.com/forms/d/e/1FAIpQLScNAvrwJpb850IjIul91ddi2bUKLyrRQkAS8N6t5mbXy0Vi0A/viewform"><strong>Welcome Survey</strong></a> is part of your Lab 1; we won't count your Lab 1 as submitted unless your Welcome Survey is also submitted.</li>
 </ul>
 </li>
 <li>Project 1 is released.<ul>
-<li>The checkpoint (Questions 1-7) is due on <strong>Friday, Jan 17th</strong>.</li>
-<li>The full project is due on <strong>Friday, Jan 24th</strong>.</li>
+<li>The checkpoint (Questions 1-7) is due on <strong>Friday, April 11th</strong>.</li>
+<li>The full project is due on <strong>Friday, April 18th</strong>.</li>
 </ul>
 </li>
 <li>Lab 2 will be released tomorrow.</li>
@@ -7634,18 +7635,131 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=9961f647">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=9961f647">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
 <span class="n">penguins</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s1">'penguins'</span><span class="p">)</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
 <span class="n">penguins</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>species</th>
+<th>island</th>
+<th>bill_length_mm</th>
+<th>bill_depth_mm</th>
+<th>flipper_length_mm</th>
+<th>body_mass_g</th>
+<th>sex</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>Adelie</td>
+<td>Torgersen</td>
+<td>39.1</td>
+<td>18.7</td>
+<td>181.0</td>
+<td>3750.0</td>
+<td>Male</td>
+</tr>
+<tr>
+<th>1</th>
+<td>Adelie</td>
+<td>Torgersen</td>
+<td>39.5</td>
+<td>17.4</td>
+<td>186.0</td>
+<td>3800.0</td>
+<td>Female</td>
+</tr>
+<tr>
+<th>2</th>
+<td>Adelie</td>
+<td>Torgersen</td>
+<td>40.3</td>
+<td>18.0</td>
+<td>195.0</td>
+<td>3250.0</td>
+<td>Female</td>
+</tr>
+<tr>
+<th>...</th>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<th>341</th>
+<td>Gentoo</td>
+<td>Biscoe</td>
+<td>50.4</td>
+<td>15.7</td>
+<td>222.0</td>
+<td>5750.0</td>
+<td>Male</td>
+</tr>
+<tr>
+<th>342</th>
+<td>Gentoo</td>
+<td>Biscoe</td>
+<td>45.2</td>
+<td>14.8</td>
+<td>212.0</td>
+<td>5200.0</td>
+<td>Female</td>
+</tr>
+<tr>
+<th>343</th>
+<td>Gentoo</td>
+<td>Biscoe</td>
+<td>49.9</td>
+<td>16.1</td>
+<td>213.0</td>
+<td>5400.0</td>
+<td>Male</td>
+</tr>
+</tbody>
+</table>
+<p>333 rows × 7 columns</p>
+</div>
 </div>
 </div>
 </div>
@@ -7743,16 +7857,28 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=accb653d">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=accb653d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">penguins</span><span class="p">[</span><span class="s1">'body_mass_g'</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>np.float64(4207.057057057057)</pre>
 </div>
 </div>
 </div>
@@ -7775,7 +7901,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># ???</span>
@@ -7795,12 +7921,12 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=50496266">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=50496266">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">species_map</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([],</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">float</span><span class="p">)</span>
@@ -7811,6 +7937,21 @@ a.anchor-link {
 
 <span class="n">species_map</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>Adelie       3706.16
+Chinstrap    3733.09
+Gentoo       5092.44
+dtype: float64</pre>
 </div>
 </div>
 </div>
@@ -7855,12 +7996,12 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=c248efba">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=c248efba">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Before:</span>
@@ -7870,17 +8011,45 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=59a1739d">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>np.float64(4207.057057057057)</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=59a1739d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># After:</span>
 <span class="n">penguins</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'species'</span><span class="p">)[</span><span class="s1">'body_mass_g'</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>species
+Adelie       3706.16
+Chinstrap    3733.09
+Gentoo       5092.44
+Name: body_mass_g, dtype: float64</pre>
 </div>
 </div>
 </div>
@@ -7954,7 +8123,7 @@ Gentoo       0.00</code></pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [86]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Fill this in, then respond on dsc80.com/q</span>
@@ -7985,16 +8154,32 @@ Gentoo       0.00</code></pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=14ede341">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=14ede341">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [36]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">penguins</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'species'</span><span class="p">)[</span><span class="s1">'bill_length_mm'</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[36]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>species
+Adelie       38.82
+Chinstrap    48.83
+Gentoo       47.57
+Name: bill_length_mm, dtype: float64</pre>
 </div>
 </div>
 </div>
@@ -8010,16 +8195,28 @@ Gentoo       0.00</code></pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=16bdc987">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=16bdc987">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [37]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">penguins</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'species'</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[37]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>&lt;pandas.core.groupby.generic.DataFrameGroupBy object at 0x29099d3d0&gt;</pre>
 </div>
 </div>
 </div>
@@ -8036,12 +8233,12 @@ Gentoo       0.00</code></pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=af9540c5">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=af9540c5">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [38]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Simplified DataFrame for demonstration:</span>
@@ -8052,18 +8249,110 @@ Gentoo       0.00</code></pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=b6c3ecfa">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[38]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>species</th>
+<th>body_mass_g</th>
+<th>sex</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>Adelie</td>
+<td>3750.0</td>
+<td>Male</td>
+</tr>
+<tr>
+<th>156</th>
+<td>Chinstrap</td>
+<td>3725.0</td>
+<td>Male</td>
+</tr>
+<tr>
+<th>308</th>
+<td>Gentoo</td>
+<td>4875.0</td>
+<td>Female</td>
+</tr>
+<tr>
+<th>1</th>
+<td>Adelie</td>
+<td>3800.0</td>
+<td>Female</td>
+</tr>
+<tr>
+<th>258</th>
+<td>Gentoo</td>
+<td>4350.0</td>
+<td>Female</td>
+</tr>
+<tr>
+<th>157</th>
+<td>Chinstrap</td>
+<td>3950.0</td>
+<td>Female</td>
+</tr>
+<tr>
+<th>309</th>
+<td>Gentoo</td>
+<td>5550.0</td>
+<td>Male</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=b6c3ecfa">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [39]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Creates one group for each unique value in the species column.</span>
 <span class="n">penguin_groups</span> <span class="o">=</span> <span class="n">penguins_small</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'species'</span><span class="p">)</span>
 <span class="n">penguin_groups</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[39]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>&lt;pandas.core.groupby.generic.DataFrameGroupBy object at 0x29099f590&gt;</pre>
 </div>
 </div>
 </div>
@@ -8079,16 +8368,28 @@ Gentoo       0.00</code></pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=1526d3ff">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=1526d3ff">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [40]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">penguin_groups</span><span class="o">.</span><span class="n">groups</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[40]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>{'Adelie': [0, 1], 'Chinstrap': [156, 157], 'Gentoo': [308, 258, 309]}</pre>
 </div>
 </div>
 </div>
@@ -8104,12 +8405,12 @@ Gentoo       0.00</code></pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=5a8bcea7">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=5a8bcea7">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [41]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">penguin_groups</span><span class="o">.</span><span class="n">get_group</span><span class="p">(</span><span class="s1">'Chinstrap'</span><span class="p">)</span>
@@ -8118,17 +8419,117 @@ Gentoo       0.00</code></pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=6c3f0700">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[41]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>species</th>
+<th>body_mass_g</th>
+<th>sex</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>156</th>
+<td>Chinstrap</td>
+<td>3725.0</td>
+<td>Male</td>
+</tr>
+<tr>
+<th>157</th>
+<td>Chinstrap</td>
+<td>3950.0</td>
+<td>Female</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=6c3f0700">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [42]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Same as the above!</span>
 <span class="n">penguins_small</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">'species == "Chinstrap"'</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[42]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>species</th>
+<th>body_mass_g</th>
+<th>sex</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>156</th>
+<td>Chinstrap</td>
+<td>3725.0</td>
+<td>Male</td>
+</tr>
+<tr>
+<th>157</th>
+<td>Chinstrap</td>
+<td>3950.0</td>
+<td>Female</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
 </div>
@@ -8176,12 +8577,12 @@ Gentoo       0.00</code></pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=ecf032ef">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=ecf032ef">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [43]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">penguins_small</span>
@@ -8190,12 +8591,92 @@ Gentoo       0.00</code></pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=5f9c1d82">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[43]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>species</th>
+<th>body_mass_g</th>
+<th>sex</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>Adelie</td>
+<td>3750.0</td>
+<td>Male</td>
+</tr>
+<tr>
+<th>156</th>
+<td>Chinstrap</td>
+<td>3725.0</td>
+<td>Male</td>
+</tr>
+<tr>
+<th>308</th>
+<td>Gentoo</td>
+<td>4875.0</td>
+<td>Female</td>
+</tr>
+<tr>
+<th>1</th>
+<td>Adelie</td>
+<td>3800.0</td>
+<td>Female</td>
+</tr>
+<tr>
+<th>258</th>
+<td>Gentoo</td>
+<td>4350.0</td>
+<td>Female</td>
+</tr>
+<tr>
+<th>157</th>
+<td>Chinstrap</td>
+<td>3950.0</td>
+<td>Female</td>
+</tr>
+<tr>
+<th>309</th>
+<td>Gentoo</td>
+<td>5550.0</td>
+<td>Male</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=5f9c1d82">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [44]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">penguins_small</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'species'</span><span class="p">)[</span><span class="s1">'body_mass_g'</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
@@ -8204,12 +8685,28 @@ Gentoo       0.00</code></pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=d9901725">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[44]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>species
+Adelie       3775.0
+Chinstrap    3837.5
+Gentoo       4925.0
+Name: body_mass_g, dtype: float64</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d9901725">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [45]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Whoa, what happened in the sex column?</span>
@@ -8219,12 +8716,69 @@ Gentoo       0.00</code></pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=239f8d70">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[45]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>body_mass_g</th>
+<th>sex</th>
+</tr>
+<tr>
+<th>species</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>Adelie</th>
+<td>7550.0</td>
+<td>MaleFemale</td>
+</tr>
+<tr>
+<th>Chinstrap</th>
+<td>7675.0</td>
+<td>MaleFemale</td>
+</tr>
+<tr>
+<th>Gentoo</th>
+<td>14775.0</td>
+<td>FemaleFemaleMale</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=239f8d70">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [46]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">penguins_small</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'species'</span><span class="p">)</span><span class="o">.</span><span class="n">last</span><span class="p">()</span>
@@ -8233,16 +8787,130 @@ Gentoo       0.00</code></pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=dfcfcbf3">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[46]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>body_mass_g</th>
+<th>sex</th>
+</tr>
+<tr>
+<th>species</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>Adelie</th>
+<td>3800.0</td>
+<td>Female</td>
+</tr>
+<tr>
+<th>Chinstrap</th>
+<td>3950.0</td>
+<td>Female</td>
+</tr>
+<tr>
+<th>Gentoo</th>
+<td>5550.0</td>
+<td>Male</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=dfcfcbf3">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [47]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">penguins_small</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'species'</span><span class="p">)</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[47]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>body_mass_g</th>
+<th>sex</th>
+</tr>
+<tr>
+<th>species</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>Adelie</th>
+<td>3800.0</td>
+<td>Male</td>
+</tr>
+<tr>
+<th>Chinstrap</th>
+<td>3950.0</td>
+<td>Male</td>
+</tr>
+<tr>
+<th>Gentoo</th>
+<td>5550.0</td>
+<td>Male</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
 </div>
@@ -8258,16 +8926,73 @@ Gentoo       0.00</code></pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=0712c4fe">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=0712c4fe">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [48]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">penguins_small</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'species'</span><span class="p">)</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[48]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>body_mass_g</th>
+<th>sex</th>
+</tr>
+<tr>
+<th>species</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>Adelie</th>
+<td>3800.0</td>
+<td>Male</td>
+</tr>
+<tr>
+<th>Chinstrap</th>
+<td>3950.0</td>
+<td>Male</td>
+</tr>
+<tr>
+<th>Gentoo</th>
+<td>5550.0</td>
+<td>Male</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
 </div>
@@ -8283,17 +9008,61 @@ Gentoo       0.00</code></pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=2b7bffd6">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=2b7bffd6">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [49]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># This penguin is Female!</span>
 <span class="n">penguins_small</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">penguins</span><span class="p">[</span><span class="s1">'species'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'Adelie'</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">penguins</span><span class="p">[</span><span class="s1">'body_mass_g'</span><span class="p">]</span> <span class="o">==</span> <span class="mf">3800.0</span><span class="p">)]</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[49]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>species</th>
+<th>body_mass_g</th>
+<th>sex</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>1</th>
+<td>Adelie</td>
+<td>3800.0</td>
+<td>Female</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
 </div>
@@ -8318,7 +9087,7 @@ Gentoo       0.00</code></pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [87]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Your code goes here.</span>
@@ -8694,7 +9463,7 @@ Gentoo       0.00</code></pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [50]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">z_score</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
@@ -8704,16 +9473,35 @@ Gentoo       0.00</code></pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=2d600ae5">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=2d600ae5">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [51]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">z_score</span><span class="p">(</span><span class="n">penguins</span><span class="p">[</span><span class="s1">'body_mass_g'</span><span class="p">])</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[51]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>0     -0.57
+1     -0.51
+2     -1.19
+       ... 
+341    1.92
+342    1.23
+343    1.48
+Name: body_mass_g, Length: 333, dtype: float64</pre>
 </div>
 </div>
 </div>
@@ -8736,12 +9524,12 @@ Gentoo       0.00</code></pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=3872682f">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=3872682f">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [52]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">z_mass</span> <span class="o">=</span> <span class="p">(</span><span class="n">penguins</span>
@@ -8754,12 +9542,31 @@ Gentoo       0.00</code></pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=1bd014d2">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[52]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>0      0.10
+1      0.21
+2     -1.00
+       ... 
+341    1.32
+342    0.22
+343    0.62
+Name: body_mass_g, Length: 333, dtype: float64</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=1bd014d2">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [55]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">penguins</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">z_mass</span><span class="o">=</span><span class="n">z_mass</span><span class="p">)</span>
@@ -8768,16 +9575,280 @@ Gentoo       0.00</code></pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=499fd16f">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[55]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>species</th>
+<th>island</th>
+<th>bill_length_mm</th>
+<th>bill_depth_mm</th>
+<th>flipper_length_mm</th>
+<th>body_mass_g</th>
+<th>sex</th>
+<th>z_mass</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>Adelie</td>
+<td>Torgersen</td>
+<td>39.1</td>
+<td>18.7</td>
+<td>181.0</td>
+<td>3750.0</td>
+<td>Male</td>
+<td>0.10</td>
+</tr>
+<tr>
+<th>1</th>
+<td>Adelie</td>
+<td>Torgersen</td>
+<td>39.5</td>
+<td>17.4</td>
+<td>186.0</td>
+<td>3800.0</td>
+<td>Female</td>
+<td>0.21</td>
+</tr>
+<tr>
+<th>2</th>
+<td>Adelie</td>
+<td>Torgersen</td>
+<td>40.3</td>
+<td>18.0</td>
+<td>195.0</td>
+<td>3250.0</td>
+<td>Female</td>
+<td>-1.00</td>
+</tr>
+<tr>
+<th>...</th>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<th>341</th>
+<td>Gentoo</td>
+<td>Biscoe</td>
+<td>50.4</td>
+<td>15.7</td>
+<td>222.0</td>
+<td>5750.0</td>
+<td>Male</td>
+<td>1.32</td>
+</tr>
+<tr>
+<th>342</th>
+<td>Gentoo</td>
+<td>Biscoe</td>
+<td>45.2</td>
+<td>14.8</td>
+<td>212.0</td>
+<td>5200.0</td>
+<td>Female</td>
+<td>0.22</td>
+</tr>
+<tr>
+<th>343</th>
+<td>Gentoo</td>
+<td>Biscoe</td>
+<td>49.9</td>
+<td>16.1</td>
+<td>213.0</td>
+<td>5400.0</td>
+<td>Male</td>
+<td>0.62</td>
+</tr>
+</tbody>
+</table>
+<p>333 rows × 8 columns</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=499fd16f">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [57]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">display_df</span><span class="p">(</span><span class="n">penguins</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">z_mass</span><span class="o">=</span><span class="n">z_mass</span><span class="p">),</span> <span class="n">rows</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>species</th>
+<th>island</th>
+<th>bill_length_mm</th>
+<th>bill_depth_mm</th>
+<th>flipper_length_mm</th>
+<th>body_mass_g</th>
+<th>sex</th>
+<th>z_mass</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>Adelie</td>
+<td>Torgersen</td>
+<td>39.1</td>
+<td>18.7</td>
+<td>181.0</td>
+<td>3750.0</td>
+<td>Male</td>
+<td>0.10</td>
+</tr>
+<tr>
+<th>1</th>
+<td>Adelie</td>
+<td>Torgersen</td>
+<td>39.5</td>
+<td>17.4</td>
+<td>186.0</td>
+<td>3800.0</td>
+<td>Female</td>
+<td>0.21</td>
+</tr>
+<tr>
+<th>2</th>
+<td>Adelie</td>
+<td>Torgersen</td>
+<td>40.3</td>
+<td>18.0</td>
+<td>195.0</td>
+<td>3250.0</td>
+<td>Female</td>
+<td>-1.00</td>
+</tr>
+<tr>
+<th>4</th>
+<td>Adelie</td>
+<td>Torgersen</td>
+<td>36.7</td>
+<td>19.3</td>
+<td>193.0</td>
+<td>3450.0</td>
+<td>Female</td>
+<td>-0.56</td>
+</tr>
+<tr>
+<th>...</th>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<th>340</th>
+<td>Gentoo</td>
+<td>Biscoe</td>
+<td>46.8</td>
+<td>14.3</td>
+<td>215.0</td>
+<td>4850.0</td>
+<td>Female</td>
+<td>-0.49</td>
+</tr>
+<tr>
+<th>341</th>
+<td>Gentoo</td>
+<td>Biscoe</td>
+<td>50.4</td>
+<td>15.7</td>
+<td>222.0</td>
+<td>5750.0</td>
+<td>Male</td>
+<td>1.32</td>
+</tr>
+<tr>
+<th>342</th>
+<td>Gentoo</td>
+<td>Biscoe</td>
+<td>45.2</td>
+<td>14.8</td>
+<td>212.0</td>
+<td>5200.0</td>
+<td>Female</td>
+<td>0.22</td>
+</tr>
+<tr>
+<th>343</th>
+<td>Gentoo</td>
+<td>Biscoe</td>
+<td>49.9</td>
+<td>16.1</td>
+<td>213.0</td>
+<td>5400.0</td>
+<td>Male</td>
+<td>0.62</td>
+</tr>
+</tbody>
+</table>
+<p>333 rows × 8 columns</p>
+</div>
 </div>
 </div>
 </div>
@@ -8797,16 +9868,32 @@ Gentoo       0.00</code></pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=61b31afc">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=61b31afc">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [58]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">penguins</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'species'</span><span class="p">)[</span><span class="s1">'body_mass_g'</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[58]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>species
+Adelie       3706.16
+Chinstrap    3733.09
+Gentoo       5092.44
+Name: body_mass_g, dtype: float64</pre>
 </div>
 </div>
 </div>
@@ -8828,12 +9915,12 @@ Gentoo       0.00</code></pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=447eeb69">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=447eeb69">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [59]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="n">penguins</span>
@@ -8841,6 +9928,119 @@ Gentoo       0.00</code></pre>
  <span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">df</span><span class="p">:</span> <span class="n">df</span><span class="p">[</span><span class="s1">'bill_length_mm'</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">39</span><span class="p">)</span>
 <span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[59]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>species</th>
+<th>island</th>
+<th>bill_length_mm</th>
+<th>bill_depth_mm</th>
+<th>flipper_length_mm</th>
+<th>body_mass_g</th>
+<th>sex</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>152</th>
+<td>Chinstrap</td>
+<td>Dream</td>
+<td>46.5</td>
+<td>17.9</td>
+<td>192.0</td>
+<td>3500.0</td>
+<td>Female</td>
+</tr>
+<tr>
+<th>153</th>
+<td>Chinstrap</td>
+<td>Dream</td>
+<td>50.0</td>
+<td>19.5</td>
+<td>196.0</td>
+<td>3900.0</td>
+<td>Male</td>
+</tr>
+<tr>
+<th>154</th>
+<td>Chinstrap</td>
+<td>Dream</td>
+<td>51.3</td>
+<td>19.2</td>
+<td>193.0</td>
+<td>3650.0</td>
+<td>Male</td>
+</tr>
+<tr>
+<th>...</th>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<th>341</th>
+<td>Gentoo</td>
+<td>Biscoe</td>
+<td>50.4</td>
+<td>15.7</td>
+<td>222.0</td>
+<td>5750.0</td>
+<td>Male</td>
+</tr>
+<tr>
+<th>342</th>
+<td>Gentoo</td>
+<td>Biscoe</td>
+<td>45.2</td>
+<td>14.8</td>
+<td>212.0</td>
+<td>5200.0</td>
+<td>Female</td>
+</tr>
+<tr>
+<th>343</th>
+<td>Gentoo</td>
+<td>Biscoe</td>
+<td>49.9</td>
+<td>16.1</td>
+<td>213.0</td>
+<td>5400.0</td>
+<td>Male</td>
+</tr>
+</tbody>
+</table>
+<p>187 rows × 7 columns</p>
+</div>
 </div>
 </div>
 </div>
@@ -8867,12 +10067,12 @@ Gentoo       0.00</code></pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=a88db646">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=a88db646">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [60]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="n">penguins</span>
@@ -8880,6 +10080,119 @@ Gentoo       0.00</code></pre>
  <span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">df</span><span class="p">:</span> <span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">100</span><span class="p">)</span>
 <span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[60]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>species</th>
+<th>island</th>
+<th>bill_length_mm</th>
+<th>bill_depth_mm</th>
+<th>flipper_length_mm</th>
+<th>body_mass_g</th>
+<th>sex</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>Adelie</td>
+<td>Torgersen</td>
+<td>39.1</td>
+<td>18.7</td>
+<td>181.0</td>
+<td>3750.0</td>
+<td>Male</td>
+</tr>
+<tr>
+<th>1</th>
+<td>Adelie</td>
+<td>Torgersen</td>
+<td>39.5</td>
+<td>17.4</td>
+<td>186.0</td>
+<td>3800.0</td>
+<td>Female</td>
+</tr>
+<tr>
+<th>2</th>
+<td>Adelie</td>
+<td>Torgersen</td>
+<td>40.3</td>
+<td>18.0</td>
+<td>195.0</td>
+<td>3250.0</td>
+<td>Female</td>
+</tr>
+<tr>
+<th>...</th>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<th>341</th>
+<td>Gentoo</td>
+<td>Biscoe</td>
+<td>50.4</td>
+<td>15.7</td>
+<td>222.0</td>
+<td>5750.0</td>
+<td>Male</td>
+</tr>
+<tr>
+<th>342</th>
+<td>Gentoo</td>
+<td>Biscoe</td>
+<td>45.2</td>
+<td>14.8</td>
+<td>212.0</td>
+<td>5200.0</td>
+<td>Female</td>
+</tr>
+<tr>
+<th>343</th>
+<td>Gentoo</td>
+<td>Biscoe</td>
+<td>49.9</td>
+<td>16.1</td>
+<td>213.0</td>
+<td>5400.0</td>
+<td>Male</td>
+</tr>
+</tbody>
+</table>
+<p>265 rows × 7 columns</p>
+</div>
 </div>
 </div>
 </div>
@@ -8926,12 +10239,12 @@ Gentoo       0.00</code></pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=72b3489d-b988-4987-bff1-c9a7df126e8d">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=72b3489d-b988-4987-bff1-c9a7df126e8d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [61]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">penguins</span>
@@ -8940,12 +10253,125 @@ Gentoo       0.00</code></pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=a87917b8">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[61]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>species</th>
+<th>island</th>
+<th>bill_length_mm</th>
+<th>bill_depth_mm</th>
+<th>flipper_length_mm</th>
+<th>body_mass_g</th>
+<th>sex</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>Adelie</td>
+<td>Torgersen</td>
+<td>39.1</td>
+<td>18.7</td>
+<td>181.0</td>
+<td>3750.0</td>
+<td>Male</td>
+</tr>
+<tr>
+<th>1</th>
+<td>Adelie</td>
+<td>Torgersen</td>
+<td>39.5</td>
+<td>17.4</td>
+<td>186.0</td>
+<td>3800.0</td>
+<td>Female</td>
+</tr>
+<tr>
+<th>2</th>
+<td>Adelie</td>
+<td>Torgersen</td>
+<td>40.3</td>
+<td>18.0</td>
+<td>195.0</td>
+<td>3250.0</td>
+<td>Female</td>
+</tr>
+<tr>
+<th>...</th>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<th>341</th>
+<td>Gentoo</td>
+<td>Biscoe</td>
+<td>50.4</td>
+<td>15.7</td>
+<td>222.0</td>
+<td>5750.0</td>
+<td>Male</td>
+</tr>
+<tr>
+<th>342</th>
+<td>Gentoo</td>
+<td>Biscoe</td>
+<td>45.2</td>
+<td>14.8</td>
+<td>212.0</td>
+<td>5200.0</td>
+<td>Female</td>
+</tr>
+<tr>
+<th>343</th>
+<td>Gentoo</td>
+<td>Biscoe</td>
+<td>49.9</td>
+<td>16.1</td>
+<td>213.0</td>
+<td>5400.0</td>
+<td>Male</td>
+</tr>
+</tbody>
+</table>
+<p>333 rows × 7 columns</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=a87917b8">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [62]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">species_and_island</span> <span class="o">=</span> <span class="p">(</span>
@@ -8956,6 +10382,78 @@ Gentoo       0.00</code></pre>
 <span class="p">)</span>
 <span class="n">species_and_island</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[62]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th></th>
+<th>bill_length_mm</th>
+<th>body_mass_g</th>
+</tr>
+<tr>
+<th>species</th>
+<th>island</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th rowspan="3" valign="top">Adelie</th>
+<th>Biscoe</th>
+<td>38.98</td>
+<td>3709.66</td>
+</tr>
+<tr>
+<th>Dream</th>
+<td>38.52</td>
+<td>3701.36</td>
+</tr>
+<tr>
+<th>Torgersen</th>
+<td>39.04</td>
+<td>3708.51</td>
+</tr>
+<tr>
+<th>Chinstrap</th>
+<th>Dream</th>
+<td>48.83</td>
+<td>3733.09</td>
+</tr>
+<tr>
+<th>Gentoo</th>
+<th>Biscoe</th>
+<td>47.57</td>
+<td>5092.44</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
 </div>
@@ -8975,12 +10473,12 @@ Gentoo       0.00</code></pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=7ade0a51">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=7ade0a51">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [63]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">species_and_island</span>
@@ -8989,12 +10487,84 @@ Gentoo       0.00</code></pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=771e57f5">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[63]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th></th>
+<th>bill_length_mm</th>
+<th>body_mass_g</th>
+</tr>
+<tr>
+<th>species</th>
+<th>island</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th rowspan="3" valign="top">Adelie</th>
+<th>Biscoe</th>
+<td>38.98</td>
+<td>3709.66</td>
+</tr>
+<tr>
+<th>Dream</th>
+<td>38.52</td>
+<td>3701.36</td>
+</tr>
+<tr>
+<th>Torgersen</th>
+<td>39.04</td>
+<td>3708.51</td>
+</tr>
+<tr>
+<th>Chinstrap</th>
+<th>Dream</th>
+<td>48.83</td>
+<td>3733.09</td>
+</tr>
+<tr>
+<th>Gentoo</th>
+<th>Biscoe</th>
+<td>47.57</td>
+<td>5092.44</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=771e57f5">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [64]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">species_and_island</span><span class="p">[</span><span class="s1">'body_mass_g'</span><span class="p">]</span>
@@ -9003,12 +10573,30 @@ Gentoo       0.00</code></pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=bb58b9eb">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[64]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>species    island   
+Adelie     Biscoe       3709.66
+           Dream        3701.36
+           Torgersen    3708.51
+Chinstrap  Dream        3733.09
+Gentoo     Biscoe       5092.44
+Name: body_mass_g, dtype: float64</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=bb58b9eb">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [65]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">species_and_island</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">'Adelie'</span><span class="p">]</span>
@@ -9017,12 +10605,69 @@ Gentoo       0.00</code></pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=4bc553eb">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[65]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>bill_length_mm</th>
+<th>body_mass_g</th>
+</tr>
+<tr>
+<th>island</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>Biscoe</th>
+<td>38.98</td>
+<td>3709.66</td>
+</tr>
+<tr>
+<th>Dream</th>
+<td>38.52</td>
+<td>3701.36</td>
+</tr>
+<tr>
+<th>Torgersen</th>
+<td>39.04</td>
+<td>3708.51</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=4bc553eb">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [66]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">species_and_island</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="s1">'Adelie'</span><span class="p">,</span> <span class="s1">'Torgersen'</span><span class="p">)]</span>
@@ -9031,12 +10676,26 @@ Gentoo       0.00</code></pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=ca4039ed">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[66]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>bill_length_mm      39.04
+body_mass_g       3708.51
+Name: (Adelie, Torgersen), dtype: float64</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=ca4039ed">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [67]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">species_and_island</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
@@ -9045,12 +10704,86 @@ Gentoo       0.00</code></pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=8b35fbd1">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[67]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>species</th>
+<th>island</th>
+<th>bill_length_mm</th>
+<th>body_mass_g</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>Adelie</td>
+<td>Biscoe</td>
+<td>38.98</td>
+<td>3709.66</td>
+</tr>
+<tr>
+<th>1</th>
+<td>Adelie</td>
+<td>Dream</td>
+<td>38.52</td>
+<td>3701.36</td>
+</tr>
+<tr>
+<th>2</th>
+<td>Adelie</td>
+<td>Torgersen</td>
+<td>39.04</td>
+<td>3708.51</td>
+</tr>
+<tr>
+<th>3</th>
+<td>Chinstrap</td>
+<td>Dream</td>
+<td>48.83</td>
+<td>3733.09</td>
+</tr>
+<tr>
+<th>4</th>
+<td>Gentoo</td>
+<td>Biscoe</td>
+<td>47.57</td>
+<td>5092.44</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=8b35fbd1">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [68]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="n">penguins</span>
@@ -9059,6 +10792,80 @@ Gentoo       0.00</code></pre>
  <span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 <span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[68]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>species</th>
+<th>island</th>
+<th>bill_length_mm</th>
+<th>body_mass_g</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>Adelie</td>
+<td>Biscoe</td>
+<td>38.98</td>
+<td>3709.66</td>
+</tr>
+<tr>
+<th>1</th>
+<td>Adelie</td>
+<td>Dream</td>
+<td>38.52</td>
+<td>3701.36</td>
+</tr>
+<tr>
+<th>2</th>
+<td>Adelie</td>
+<td>Torgersen</td>
+<td>39.04</td>
+<td>3708.51</td>
+</tr>
+<tr>
+<th>3</th>
+<td>Chinstrap</td>
+<td>Dream</td>
+<td>48.83</td>
+<td>3733.09</td>
+</tr>
+<tr>
+<th>4</th>
+<td>Gentoo</td>
+<td>Biscoe</td>
+<td>47.57</td>
+<td>5092.44</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
 </div>
@@ -9078,12 +10885,12 @@ Gentoo       0.00</code></pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=73e04e4b">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=73e04e4b">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [69]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">baby_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s1">'data'</span><span class="p">)</span> <span class="o">/</span> <span class="s1">'baby.csv'</span>
@@ -9094,12 +10901,101 @@ Gentoo       0.00</code></pre>
 </div>
 </div>
 </div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[69]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>Name</th>
+<th>Sex</th>
+<th>Count</th>
+<th>Year</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>Liam</td>
+<td>M</td>
+<td>20456</td>
+<td>2022</td>
+</tr>
+<tr>
+<th>1</th>
+<td>Noah</td>
+<td>M</td>
+<td>18621</td>
+<td>2022</td>
+</tr>
+<tr>
+<th>2</th>
+<td>Olivia</td>
+<td>F</td>
+<td>16573</td>
+<td>2022</td>
+</tr>
+<tr>
+<th>...</th>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<th>2085155</th>
+<td>Wright</td>
+<td>M</td>
+<td>5</td>
+<td>1880</td>
+</tr>
+<tr>
+<th>2085156</th>
+<td>York</td>
+<td>M</td>
+<td>5</td>
+<td>1880</td>
+</tr>
+<tr>
+<th>2085157</th>
+<td>Zachariah</td>
+<td>M</td>
+<td>5</td>
+<td>1880</td>
+</tr>
+</tbody>
+</table>
+<p>2085158 rows × 4 columns</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=dcabd1d5">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [70]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Your code goes here.</span>
